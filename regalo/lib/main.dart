@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart'; //To import the material package
 
 void main() {
@@ -19,11 +18,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           elevation: 0, //To remove the shadow of the AppBar
           toolbarHeight:
-              55, //To increase the toolbar height to fit icons better
+              70, //To increase the toolbar height to fit icons better
           backgroundColor:
               Colors.grey[300], //Setting the bg color of the appbar
           leading: Image.asset(
-              "images/hamburgericon.png"),
+              //Leading is used to set the widget inside it to appear first on the appbar
+              "assets/images/hamburgericon.png"),
           actions: [
             //actions parameter accepts a list of widgets as its parameter.
             Container(
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                 ),
                 margin: EdgeInsets.all(
                     10), //To align the icon inside this container well wrt to all the edges
-                child: Image.asset("images/Search_icon.png"))
+                child: Image.asset("assets/images/Search_icon.png"))
           ],
         ),
         body: Column(
@@ -93,7 +93,9 @@ class MyApp extends StatelessWidget {
                   ]),
               child: Column(
                 children: [
-                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -102,14 +104,18 @@ class MyApp extends StatelessWidget {
                       buildColumnAtTop("Babies"),
                     ],
                   ),
-                  Row(children: [
-                    Column(children: [
-                      Container(
-                        height: 200,
-                        width: 100,
-                        child: Image.asset("accests/images/")),
-                    ],)
-                  ],)
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                              height: 200,
+                              width: 100,
+                              child: Image.asset("accests/images/")),
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             ))
