@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           backgroundColor:
               Colors.grey[300], //Setting the bg color of the appbar
           leading: Image.asset(
-              "assets/images/hamburgericon.png"),
+              "images/hamburgericon.png"),
           actions: [
             //actions parameter accepts a list of widgets as its parameter.
             Container(
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                 ),
                 margin: EdgeInsets.all(
                     10), //To align the icon inside this container well wrt to all the edges
-                child: Image.asset("assets/images/Search_icon.png"))
+                child: Image.asset("images/Search_icon.png"))
           ],
         ),
         body: Column(
