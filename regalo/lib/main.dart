@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
                       Container(
                         height: 200,
                         width: 100,
-                        child: Image.asset("accests/images/")),
+                        child: Image.asset("images/")),
                     ],)
                   ],)
                 ],
